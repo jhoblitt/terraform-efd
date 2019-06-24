@@ -1,0 +1,11 @@
+---
+enabled: true
+image: confluentinc/cp-ksql-server
+imageTag: 5.0.1
+## Optionally specify an array of imagePullSecrets. Secrets must be manually created in the namespace.
+## https://kubernetes.io/docs/concepts/containers/images/#specifying-imagepullsecrets-on-a-pod
+imagePullSecrets:
+#  - name: "regcred"
+heapOptions: "-Xms512M -Xmx512M"
+ksql:
+  headless: false

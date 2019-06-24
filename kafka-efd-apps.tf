@@ -19,7 +19,7 @@ resource "helm_release" "kafka-efd-apps" {
 
   depends_on = [
     "helm_release.influxdb",
-    "helm_release.confluent",
+    "helm_release.cp_kafka",
   ]
 }
 
